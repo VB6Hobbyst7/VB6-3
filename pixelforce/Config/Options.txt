@@ -1,0 +1,17 @@
+
+//PixelForce RayTracer Confguration File
+
+
+<settings>
+
+  Resolution 800x600
+
+  DepthTest on
+  ZSort on
+  AlphaBlend on
+  Lighting on
+  Texturing on
+  Filtering on
+  MultiSampling on
+
+</settings>

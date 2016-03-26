@@ -1,0 +1,152 @@
+
+//PixelForce RayTracer Scene File
+
+
+<BackBuffer>
+  Clear on
+  Color 0 0 0
+  AntiAliasLevel 0
+  AliasEdgeOnly off
+</BackBuffer>
+
+<ClippingDistance>
+  ZNear -100000
+  ZFar 100000
+</ClippingDistance>
+
+<Camera>
+  Position 0.00 0.00 0.00
+  Rotation 30.00 -20.00
+  Scale 0.50
+</Camera>
+
+<DiffuseMap>
+  File $LocalPath\Texture\TestCubesPlane.tga
+  Transparency on
+  Generate32Bit on
+  Alpha 0
+</DiffuseMap>
+
+<Light>
+  Position 0.00 0.00 0.00
+  Color 0 255 0
+  Range 1.00
+  Amplify 1.00
+  Alpha 0
+</Light>
+
+<Light>
+  Position 1.00 0.00 1.00
+  Color 0 0 255
+  Range 1.00
+  Amplify 1.00
+  Alpha 0
+</Light>
+
+<Light>
+  Position -1.00 0.00 -1.00
+  Color 255 0 0
+  Range 1.00
+  Amplify 1.00
+  Alpha 0
+</Light>
+
+<Mesh>
+  File $LocalPath\Mesh\Box.txt
+  Position 1.00 0.00 1.00
+  Rotation 10.00 0.00 0.00
+  Scale 0.70 0.70 0.70
+  Texture 1
+  Lighting on
+  Alpha 127
+</Mesh>
+
+<Mesh>
+  File $LocalPath\Mesh\Box.txt
+  Position -1.00 0.00 -1.00
+  Rotation 40.00 0.00 0.00
+  Scale 0.70 0.70 0.70
+  Texture 1
+  Lighting on
+  Alpha 127
+</Mesh>
+
+<Mesh>
+  File $LocalPath\Mesh\Box.txt
+  Position 0.00 0.00 0.00
+  Rotation 25.00 0.00 0.00
+  Scale 0.70 0.70 0.70
+  Texture 1
+  Lighting on
+  Alpha 127
+</Mesh>
+
+<Mesh>
+  File $LocalPath\Mesh\Plane.txt
+  Position 0.00 -0.37 0.00
+  Rotation 0.00 90.00 0.00
+  Scale 7.00 7.00 7.00
+  Texture 2
+  Lighting on
+  Alpha 91
+</Mesh>
+
+<Mesh>
+  File $LocalPath\Mesh\Plane.txt
+  Position 0.00 -0.47 0.00
+  Rotation 0.00 90.00 0.00
+  Scale 7.00 7.00 7.00
+  Texture 2
+  Lighting on
+  Alpha 63
+</Mesh>
+
+<Mesh>
+  File $LocalPath\Mesh\Plane.txt
+  Position 0.00 -0.57 0.00
+  Rotation 0.00 90.00 0.00
+  Scale 7.00 7.00 7.00
+  Texture 2
+  Lighting on
+  Alpha 31
+</Mesh>
+
+<Mesh>
+  File $LocalPath\Mesh\Plane.txt
+  Position 0.00 -0.67 0.00
+  Rotation 0.00 90.00 0.00
+  Scale 7.00 7.00 7.00
+  Texture 2
+  Lighting on
+  Alpha 15
+</Mesh>
+
+<Mesh>
+  File $LocalPath\Mesh\Box.txt
+  Position 1.00 -0.73 1.00
+  Rotation 10.00 0.00 0.00
+  Scale 0.70 0.70 0.70
+  Texture 1
+  Lighting on
+  Alpha 127
+</Mesh>
+
+<Mesh>
+  File $LocalPath\Mesh\Box.txt
+  Position -1.00 -0.73 -1.00
+  Rotation 40.00 0.00 0.00
+  Scale 0.70 0.70 0.70
+  Texture 1
+  Lighting on
+  Alpha 127
+</Mesh>
+
+<Mesh>
+  File $LocalPath\Mesh\Box.txt
+  Position 0.00 -0.73 0.00
+  Rotation 25.00 0.00 0.00
+  Scale 0.70 0.70 0.70
+  Texture 1
+  Lighting on
+  Alpha 127
+</Mesh>

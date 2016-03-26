@@ -1,0 +1,164 @@
+
+//PixelForce RayTracer Code Syntax Help File
+
+
+<entry>
+  KeyWord LIGHT
+  Syntax <Light> Position, Color, Range, Amplify, Alpha </Light>
+  Info Adds an Area-Light to scene
+  More 
+</entry>
+
+<entry>
+  KeyWord BACKBUFFER
+  Syntax <BackBuffer> Clear, Color, AntiAliasLevel, AliasEdgeOnly </BackBuffer>
+  Info General scene configuration
+  More 
+</entry>
+
+<entry>
+  KeyWord CLIPPINGDISTANCE
+  Syntax <ClippingDistance> ZNear, ZFar </ClippingDistance>
+  Info Min and Max clipping range settings
+  More 
+</entry>
+
+<entry>
+  KeyWord CAMERA
+  Syntax <Camera> Position, Rotation, Scale </Camera>
+  Info Orthographic camera settings
+  More 
+</entry>
+
+<entry>
+  KeyWord DIFFUSEMAP
+  Syntax <DiffuseMap> File, Transparency, Generate32Bit, Alpha </DiffuseMap>
+  Info Adds diffuse texture map to scene
+  More 
+</entry>
+
+<entry>
+  KeyWord MESH
+  Syntax <Mesh> File, Position, Rotation, Scale, Texture, Lighting, Alpha </Mesh>
+  Info Adds external mesh file to scene
+  More 
+</entry>
+
+<entry>
+  KeyWord ZFAR
+  Syntax ZFar (float MaxDistance)
+  Info Max drawing depth
+  More 
+</entry>
+
+<entry>
+  KeyWord ZNEAR
+  Syntax ZNear (float MinDistance)
+  Info Min drawing depth
+  More 
+</entry>
+
+<entry>
+  KeyWord ROTATION
+  Syntax Rotation (float AngleX) (float AngleY) (float AngleZ)
+  Info Rotates object or camera by X,Y and Z
+  More There is no need to define Z coord, when using this in camera section
+</entry>
+
+<entry>
+  KeyWord POSITION
+  Syntax Position (float X) (float Y) (float Z)
+  Info Sets position of object or camera
+  More 
+</entry>
+
+<entry>
+  KeyWord SCALE
+  Syntax Scale (float X) (float Y) (float Z)
+  Info Scales object or sets camera zoom factor
+  More Y and Z coords are optional when using this declaration in camera section
+</entry>
+
+<entry>
+  KeyWord CLEAR
+  Syntax Clear (boolean Enable)
+  Info Allows to clear backbuffer before frame rendering
+  More hint: Boolean variable can be set to ON/OFF only!
+</entry>
+
+<entry>
+  KeyWord COLOR
+  Syntax Color (byte Red) (byte Green) (byte Blue)
+  Info Sets backbuffer background or light color
+  More Use special 'Alpha (byte Transparency)' command to set alpha color
+</entry>
+
+<entry>
+  KeyWord ALPHA
+  Syntax Alpha (byte Transparency)
+  Info Sets transparency level for objects
+  More 
+</entry>
+
+<entry>
+  KeyWord FILE
+  Syntax File (string FullPathName)
+  Info Loads texture/mesh file into memory.
+  More You have ability to use '$LocalPath' for current rendering engine path.
+</entry>
+
+<entry>
+  KeyWord LIGHTING
+  Syntax Lighting (boolean Enable)
+  Info Object will be rendered with light pass if set to ON
+  More hint: Boolean variable can be set to ON/OFF only!
+</entry>
+
+<entry>
+  KeyWord TEXTURE
+  Syntax Texture (integer Number)
+  Info Allows object to use defined texture map
+  More When map can not be found, object will not be textured.
+</entry>
+
+<entry>
+  KeyWord TRANSPARENCY
+  Syntax Transparency (boolean Enable)
+  Info Allows texture to be rendered with alpha-blending
+  More If you want to generate alpha channel for texture use 'Generate32Bit' command.
+</entry>
+
+<entry>
+  KeyWord GENERATE32BIT
+  Syntax Generate32Bit (boolean Enable)
+  Info Generates 8-Bit alpha channel from 24-bit color channel.
+  More Will be executed only in case, when texture has no alpha channel.
+</entry>
+
+<entry>
+  KeyWord RANGE
+  Syntax Range (float Distance)
+  Info Sets light max distance
+  More 
+</entry>
+
+<entry>
+  KeyWord AMPLIFY
+  Syntax Amplify (float Factor)
+  Info Light core size factor
+  More 
+</entry>
+
+<entry>
+  KeyWord ANTIALIASLEVEL
+  Syntax AntiAliasLevel (integer BlurRadius)
+  Info Sets triangle-edge blurring radius
+  More Edge-AntiAliasing is experimental feature, use it at your own risk!
+</entry>
+
+<entry>
+  KeyWord ALIASEDGEONLY
+  Syntax AliasEdgeOnly (boolean Enable)
+  Info Blurs ALL triangle edges when set to OFF
+  More If this variable set to ON, only scene outline will be multisampled.
+</entry>

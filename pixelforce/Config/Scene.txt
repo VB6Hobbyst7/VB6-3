@@ -1,0 +1,22 @@
+
+//PixelForce RayTracer Scene File
+
+
+<BackBuffer>
+  Clear on
+  Color 0 0 0
+  AntiAliasLevel 0
+  AliasEdgeOnly on
+</BackBuffer>
+
+<ClippingDistance>
+  ZNear -100000
+  ZFar 100000
+</ClippingDistance>
+
+<Camera>
+  Position 0.00 0.00 0.00
+  Rotation 0.00 0.00
+  Scale 1.00
+</Camera>
+
